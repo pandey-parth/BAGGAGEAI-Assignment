@@ -31,6 +31,7 @@ After this processing threat image to remove background- `process_threat` fuctio
 
 From here to remove background and paste it to baggage- I have tested 2 methods, Best method based on runtime is used in file, but another method can be seen in notebook file
 
+
 **Method1**
 
 After masking make roi same size of threat image and run a loop on roi such that when mask pixle is (255) it will change roi value of threat image.
@@ -56,4 +57,6 @@ After this used `absdiff` on 2 arrays and see how many non zeros are present! Ch
 
 There are few pixles that remain non zero due to incomplete tight bound so I have used `if num_of_non_zeros < 200` return True
 
+**Final Result**
 
+![](https://github.com/pandey-parth/BAGGAGEAI-Assignment/blob/main/Result_images/08.jpg)
